@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>今天吃什么呢？</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card" id="card1">
+      <span class="title"><span class="title-span">Step1:</span> 请选择今天你已经吃了什么</span>
+      <ul id="select-ul" class="ul-list"></ul>
+      <div class="radio-container">
+        <div class="radio-item">
+          <span>允许吃重复的吗？</span><input type="radio" name="allowrepeate" id="allowrepeate">
+        </div>
+        <div class="radio-item">
+          <span>吃学校的？</span><input type="radio" name="eatwhere" id="inschool">
+          <span>不吃学校的？</span><input type="radio" name="eatwhere" id="outschool">
+        </div>
+        <div class="radio-item">
+          <span>吃外卖？</span><input type="radio" name="eatd" id="eatd">
+          <span>不吃外卖？</span><input type="radio" name="eatd" id="noeatd">
+        </div>
+      </div>
+      <span style="width: 100%; text-align: center;">-上面的都不选代表全随意-</span>
+      <button class="next-btn" id="next-btn">下一步</button>
+    </div>
+    <div class="card nosee" id="card2">
+      <span class="title"><span class="title-span">Step2:</span> 现在你应该吃：</span>
+      <span id="result"></span>
+      <span class="warn-text">有时候，犹豫也是一种选择。</span>
+      <button class="next-btn" id="pro-btn">上一步</button>
+    </div>
+  </div>
+</body>
+<script src="./index.js"></script>
+</html>
