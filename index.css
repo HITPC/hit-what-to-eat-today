@@ -19,31 +19,19 @@ html, body{
   overflow: auto;
 }
 
-@keyframes show {
-  0%{
-    transform: translateY(-5px);
-    opacity: 0;
-  }
-  0%{
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 .card{
   position: relative;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-content: center;
-  width: 60vw;
+  width: 70vw;
   height: 70vh;
   font-size: 100%;
   background-color: #fff;
   overflow: auto;
   border-radius: 20px;
   box-shadow: 1px 5px 20px rgba(0, 0, 0, .4);
-  animation: show 1s linear forwards;
 }
 
 .card li{
